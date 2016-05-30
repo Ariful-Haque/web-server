@@ -5,7 +5,7 @@ var middleware = require('./middleware');
 var port = 8080;
 
 
-
+// this is application layer middleware
 app.use(middleware.logger);
 
 app.get('/about', middleware.checkAuthentication, function(req, res) {
