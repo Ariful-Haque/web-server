@@ -6,7 +6,7 @@ var port = 8080;
 
 var middleware = {
 	checkAuthentication: function(req, res, next) {
-		console.log('Checking Auth....');
+		console.log('Checking Authorization....');
 		next();
 	},
 	logger: function(req, res, next) {
