@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 var middleware = require('./middleware');
 
-var port = 8080;
+var port = process.env.PORT || 8080;
 
 
 // this is application layer middleware
